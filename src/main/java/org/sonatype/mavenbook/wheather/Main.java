@@ -10,29 +10,16 @@ public class Main {
         PropertyConfigurator
                 .configure(Main.class.getClassLoader()
                         .getResource("log4j.properties"));
-// Read the zip code from the command line
-// (if none supplied, use 60202)
-        String zipcode = "60202";
+        String cityName = "London";
         try {
-            zipcode = args[0];
+            cityName = args[0];
         } catch (Exception e) {
         }
-// Start the program
-        new Main(zipcode).start();
-    }
 
-    private String zip;
+        InputStream dataIn = new YahooRetriever().retrieve(cityName);
 
-    public Main(String zip) {
-        this.zip = zip;
-    }
-
-    public void start() throws Exception {
-// Retrieve Data
-        InputStream dataIn = new YahooRetriever().retrieve(zip);
-// Parse Data
         Weather weather = new YahooParser().parse(dataIn);
-// Format (Print) Data
+
         System.out.print(new WeatherFormatter().format(weather));
     }
 }
