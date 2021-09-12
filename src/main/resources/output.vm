@@ -2,7 +2,7 @@
 Current Weather Conditions for:
 ${weather.city}, ${weather.country}
 Temperature: ${weather.temperature}
-Feels List: ${weather.feelsLike}
+Feels like: ${weather.feelsLike}
 Humidity: ${weather.humidity}
 Pressure: ${weather.pressure}
 Visibility: ${weather.visibility}
