@@ -9,13 +9,12 @@
     <version>1.0</version>
 
     <name>simple-weather</name>
-    <!-- FIXME change it to the project's website -->
     <url>http://www.kuptsou.ai</url>
 
     <licenses>
         <license>
-            <name>Apache 2</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <name>Kuptsou License</name>
+            <url>http://www.kuptsou.ai/licenses/LICENSE-2.0.txt</url>
             <distribution>repo</distribution>
             <comments>A business-friendly OSS license</comments>
         </license>
@@ -42,9 +41,9 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>14</maven.compiler.source>
-        <maven.compiler.target>14</maven.compiler.target>
-        <maven.compiler.plugin>3.8.0</maven.compiler.plugin>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.plugin>3.9.0</maven.compiler.plugin>
         <log4j.version>1.2.17</log4j.version>
         <dom4j.version>1.6.1</dom4j.version>
         <jaxen.version>1.2.0</jaxen.version>
@@ -121,6 +120,23 @@
                         org.sonatype.mavenbook.wheather.Main
                     </mainClass>
                 </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>simple-command</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>attached</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
