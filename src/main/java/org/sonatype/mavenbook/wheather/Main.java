@@ -16,9 +16,9 @@ public class Main {
         } catch (Exception e) {
         }
 
-        InputStream dataIn = new YahooRetriever().retrieve(cityName);
+        InputStream dataIn = new OpenWeatherRetriever().retrieve(cityName);
 
-        Weather weather = new YahooParser().parse(dataIn);
+        Weather weather = new OpenWeatherParser().parse(dataIn);
 
         System.out.print(new WeatherFormatter().format(weather));
     }

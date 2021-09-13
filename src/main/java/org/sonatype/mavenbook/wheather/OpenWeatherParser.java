@@ -6,8 +6,8 @@ import org.dom4j.io.SAXReader;
 
 import java.io.InputStream;
 
-public class YahooParser {
-    private final static Logger log = Logger.getLogger(YahooParser.class);
+public class OpenWeatherParser {
+    private final static Logger log = Logger.getLogger(OpenWeatherParser.class);
 
     public Weather parse(InputStream inputStream) throws Exception {
         Weather weather = new Weather();
