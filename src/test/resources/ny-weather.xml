@@ -1,0 +1,10 @@
+<current>
+    <city id="0" name="Minsk">
+        <country>BY</country>
+    </city>
+    <temperature value="18.86" min="273.15" max="282.59" unit="celsius" />
+    <feels_like value="18.63" unit="celsius" />
+    <humidity value="70" unit="%" />
+    <pressure value="1014" unit="hPa" />
+    <visibility value="10000" />
+</current>

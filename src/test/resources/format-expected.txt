@@ -1,0 +1,9 @@
+*********************************
+Current Weather Conditions for:
+Minsk, BY
+Temperature: 18.86 celsius
+Feels like: 18.63 celsius
+Humidity: 70%
+Pressure: 1014 hPa
+Visibility: 10000
+*********************************

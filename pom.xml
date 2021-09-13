@@ -50,6 +50,7 @@
         <jaxen.version>1.2.0</jaxen.version>
         <velocity.version>1.5</velocity.version>
         <lombok.version>1.18.20</lombok.version>
+        <commons.io.version>2.11.0</commons.io.version>
         <junit.version>4.13.2</junit.version>
     </properties>
 
@@ -79,6 +80,12 @@
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${commons.io.version}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
