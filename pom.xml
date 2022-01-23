@@ -48,7 +48,7 @@
         <dom4j.version>1.6.1</dom4j.version>
         <jaxen.version>1.2.0</jaxen.version>
         <velocity.version>1.5</velocity.version>
-        <lombok.version>1.18.20</lombok.version>
+        <lombok.version>1.18.22</lombok.version>
         <commons.io.version>2.11.0</commons.io.version>
         <junit.version>4.13.2</junit.version>
     </properties>
