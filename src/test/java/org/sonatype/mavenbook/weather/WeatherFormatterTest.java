@@ -2,9 +2,6 @@ package org.sonatype.mavenbook.weather;
 
 import junit.framework.TestCase;
 import org.apache.commons.io.IOUtils;
-import org.sonatype.mavenbook.weather.OpenWeatherParser;
-import org.sonatype.mavenbook.weather.Weather;
-import org.sonatype.mavenbook.weather.WeatherFormatter;
 
 import java.io.InputStream;
 
@@ -17,7 +14,7 @@ public class WeatherFormatterTest extends TestCase {
         InputStream nyData = getClass().getClassLoader()
                 .getResourceAsStream("ny-weather.xml");
         Weather weather = new OpenWeatherParser().parse(nyData);
-        String formattedResult = new WeatherFormatter().format(weather);
+        String formattedResult = new WeatherFormatter(weather).format();
         InputStream expected = getClass().getClassLoader()
                 .getResourceAsStream("format-expected.txt");
         assertEquals(IOUtils.toString(expected).trim(),
