@@ -117,7 +117,7 @@
                 </executions>
                 <configuration>
                     <mainClass>
-                        org.sonatype.mavenbook.wheather.Main
+                        org.sonatype.mavenbook.weather.Main
                     </mainClass>
                 </configuration>
             </plugin>

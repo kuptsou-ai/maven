@@ -1,4 +1,4 @@
-package org.sonatype.mavenbook.wheather;
+package org.sonatype.mavenbook.weather;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

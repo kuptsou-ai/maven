@@ -1,8 +1,8 @@
-package org.sonatype.mavenbook.wheather.open_weather;
+package org.sonatype.mavenbook.weather;
 
 import junit.framework.TestCase;
-import org.sonatype.mavenbook.wheather.OpenWeatherParser;
-import org.sonatype.mavenbook.wheather.Weather;
+import org.sonatype.mavenbook.weather.OpenWeatherParser;
+import org.sonatype.mavenbook.weather.Weather;
 
 import java.io.InputStream;
 

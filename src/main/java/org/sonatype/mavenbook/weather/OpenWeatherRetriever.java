@@ -1,4 +1,4 @@
-package org.sonatype.mavenbook.wheather;
+package org.sonatype.mavenbook.weather;
 
 import org.apache.log4j.Logger;
 
