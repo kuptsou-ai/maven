@@ -1,15 +1,10 @@
 package org.sonatype.mavenbook.weather;
 
 import junit.framework.TestCase;
-import org.sonatype.mavenbook.weather.OpenWeatherParser;
-import org.sonatype.mavenbook.weather.Weather;
 
 import java.io.InputStream;
 
 public class YahooParserTest extends TestCase {
-    public YahooParserTest(String name) {
-        super(name);
-    }
 
     public void testParser() throws Exception {
         InputStream nyData = getClass().getClassLoader()
